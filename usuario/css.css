@@ -1,0 +1,257 @@
+body
+{
+    background-color: rgb(222, 222, 225);
+}
+p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+}
+
+
+.bigbox
+{
+
+    width: 60%;
+   align-content: center;
+    margin-top: 8em;
+    border-color: #03336d;
+    border-radius: 2em;
+ 
+
+}
+.buttonbox
+{
+    width: 100%;
+    color: rgb(148, 93, 93);
+    border: none;
+    border-radius: 5rem;
+    font-size: 2em;
+    font-family: monospace;
+    font-weight: bold;
+   
+}
+.ventana
+{
+    background-color: rgb(222, 235, 34);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: top; 
+    margin-left: 3em;
+  }
+
+  
+  .atras{
+    height:bottom; 
+
+  }
+  /* VARIABLES */
+:root{
+    --background_header: #d7f3ff;
+    --letras_header: #03357a;
+    --background_footer: rgba(219, 200, 200, 0.89);
+    --background_body: rgb(177, 200, 239);
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.7em;
+    width: 100%;
+}
+h3 {
+  text-align: center;
+  font-size: 2.7em;
+  width: 100%;
+  color: var(--letras_header)
+
+}
+ul li{
+    background-color: rgb(190, 209, 242);
+    text-align:left;
+    list-style: square;
+
+}
+
+
+header{
+    text-align: left;
+    background-color: var(--background_header);
+    color: var(--letras_header)
+}
+
+body{
+    font-family: Arial, Verdana, sans-serif;
+    font-size: medium;
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--background_body);
+    text-align: inherit;
+    line-height: normal;
+}
+
+footer{
+    background-color: var(--background_footer);
+    width: 100%;
+}
+
+.entrar{
+  font-size: 1.2em;
+    
+    width: 40%;  
+
+}
+
+
+  
+   h2, h4{
+    font-family: Arial, Times, serif;
+    text-align: left;
+    letter-spacing: 0.1em;
+    word-spacing: 0.7 em;
+    text-decoration:underline;
+    color:var(--letras_header);
+    width: 100%;
+}
+
+
+h3 {
+  width: 100%;
+}
+
+p{
+  max-width:40em;
+  
+}
+  
+ 
+  fieldset{
+    margin: 2em;
+    background-color: rgb(255, 255, 255);
+    font-family:'Times New Roman', Times, serif;
+  }
+
+  .idv{
+    margin: 3em;
+  }
+  
+.tareas{
+  font-size: 1.5em;
+}
+  
+  legend {
+    font-size: 1em;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 0.7em;
+    line-height: 2em;
+  }
+
+  input:focus, select:focus {
+    background-color: rgb(248, 244, 245);
+  }
+ 
+  input:hover, select:hover {
+    background-color: rgb(184, 224, 255);
+  }
+  button, select, input {
+    font-size: 1em;
+    
+  }
+  button{
+    font-size: 22px;
+    padding: 14px 20px;
+    margin: 0 8px;
+    margin-bottom: 8px;
+    border-color: black;
+   
+  }
+  tbody{
+    margin: 4 0px;
+
+  }
+
+.inicio  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color:#1b61c1;
+    background-color:#eaf9ff;
+    
+}
+.contenedor{
+  color:rgb(28, 34, 97);
+  font-size:200%;
+}
+.img {
+    margin-bottom: 1em;
+}
+
+.botonesb{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+  margin-bottom: 5em;
+  margin-left: 3em;
+
+}
+
+
+.recuadro{
+ 
+    border: 1px solid #03336d;
+    padding: 10px;
+    width: 20em;
+    margin-top: 1%;
+    margin-left: 3em;
+    background-color: #f9fdff;
+
+}
+
+.start, .stop, .atras, .entrar, .select, .pizarra, .fin{
+  border: 2px solid #03336d;
+  background-color: #ffffff;
+  color:#02244e;
+
+
+}
+.fin{
+  background-color: #03336d;
+  border: 2px solid #03336d;
+  color:white;
+  size:10px;
+}
+
+.checkbox-class {
+  transform: scale(1.5);
+}
+
+.listav{
+ text-align: left;
+}
+.sec{
+  margin-left: 10%;
+  display: flex;
+  
+}
+.columna {
+  width: 45rem;
+}
+
+.contadores{
+  margin: left 0;
+}
+
+
+.activo{
+  background-color: #02244e;
+}

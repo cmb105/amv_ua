@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <title>AMV</title>
+    <style>
+        .seccion{display: none}
+        .activa{display: block}
+    </style>
+    <script src = "rest.js"></script>
+    <script src = "main_amv.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <link rel="shortcut icon" href="#">
+</head>
+
+
+<body>
+    <div id="login" class="seccion activa">
+        <form>
+
+            <fieldset class="inicio">
+                <img src="semyu.jpg" width="250" height="150" class="img">
+                <h2 class="contenedor">PORTAL ACCESO CONTROL DE INTERVENCIONES</h2>
+            </fieldset>
+            <p><b>
+                <div>USUARIO: <input id="usuarioHTML" type="text"/></div> 
+                <p></p>
+                <div>CONTRASEÑA: <input id = "contraHTML" type = "password"/></div>
+
+            </b></p>
+            <p><input type="button" class="entrar" value="Entrar" onclick="entrar()"> </p>
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+          let formulario = document.getElementById('login');
+          formulario.addEventListener('Entrar', function() {
+            formulario.reset();
+          });
+        });
+      </script>
+
+
+    <div id = "menu-principal" class = "seccion">
+        <div class="recuadro"><b>
+            <p id = "bienvenido"></p>
+             <p id = "puestoinicio"></p></b>
+        </div>
+        
+        <div class="sec">
+            <div class="columna">
+                <h3 class="listav"> LISTADO VÍCTIMAS</h3>
+            
+            <p class="bigbox" id = "listaVictimas"></p>
+            <p>  </p>
+            <div class="contadores">
+                <button id="start" class="start" onclick="empezarcrono()">COMENZAR SIMULACRO</button>
+                <button id="stop" class="stop" onclick="fincrono()">FINALIZAR SIMULACRO</button>
+                <p id="timeDisplay"></p>
+                <p >TIEMPO TOTAL TRANSCURRIDO (min):</p>
+                <p id="total"></p>
+              
+            </div>
+
+          
+            
+            <input type="button" class="fin" value="CERRAR SESIÓN" onclick="salir()">
+            
+            
+
+            <div id="tabla-dinamica"></div>
+            </div>
+            
+            <div class="columna">
+                <form>
+                    <p>
+                        <select id = "pizarra" class="pizarra">
+                            <option id = "1" value=1 selected="true"> Pizarra 1</option>
+                            <option id = "2" value=2> Pizarra 2</option>
+                            <option id = "4" value=4> Pizarra 4</option>
+                        </select>
+        
+                    </p>
+                    
+                    <input type="button" class="select" value="SELECCIONAR PIZARRA" onclick="contenidopizarras()">
+                </form>
+                <h3>LISTADO TAREAS</h3>
+            
+                <b><p id="idvict"></p></b>
+                <fieldset id="tareas" class="tareas">
+
+                </fieldset>
+                
+            </div>
+
+        </div>
+      
+
+
+        
+       
+    </div>   
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
